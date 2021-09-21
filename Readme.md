@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Elizaveta Ryzhova](https://up.htmlacademy.ru/htmlcss/32/user/490871).
-* Наставник: Ирина Малиновская.
+* Наставник: Ирина Малиновская (https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
