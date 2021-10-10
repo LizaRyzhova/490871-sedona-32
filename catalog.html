@@ -3,67 +3,67 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="CSS/styles.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
-<header class="page-header">
-  <div class="page-header-container">
-    <nav class="navigation">
-      <ul class="navigation-list">
-        <li class="navigation-item">
-          <a class="navigation-link" href="index.html">Главная</a>
-        </li>
-        <li>
-          <a class="navigation-link" href="#">О Седоне</a>
-        </li>
-        <li>
-          <a class="navigation-link" href="">Гостиницы</a>
-        </li>
-      </ul>
-    </nav>
-    <a class="page-logo" href="index.html">
-      <img class="page-header-logo" src="img/icons/logo/sedona.svg" width="138" height="70" alt="Логотип город Седона">
-    </a>
-    <div class="user-navigation">
-      <a class="navigation-link search" href="#">
-        <span class="visually-hidden">Поиск</span>
-      </a>
-      <button class="page-favourites" type="button">
-        <span class="visually-hidden">Избранное</span>
-      </button>
-      <button class="button add-favorites" type="button">Хочу сюда!</button>
-    </div>
-  </div>
-</header>
-<main class="main-inner main-container">
-  <div class="inner-background-container">
-    <div class="top-block-container">
-   <header class="inner-header">
-    <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <ul class="bredcrumbs">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">
-              <span class="visually-hidden">Главная</span>
+    <div class="page-container">
+      <header class="page-header">
+        <div class="page-header-container">
+          <nav class="navigation">
+            <ul class="navigation-list">
+              <li class="navigation-item">
+                <a class="navigation-link" href="index.html">Главная</a>
+              </li>
+              <li>
+                <a class="navigation-link" href="#">О Седоне</a>
+              </li>
+              <li>
+                <a class="navigation-link" href="">Гостиницы</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="page-logo" href="index.html">
+            <img class="page-header-logo" src="img/icons/logo/sedona.svg" width="138" height="70" alt="Логотип город Седона">
+          </a>
+          <div class="user-navigation">
+            <a class="navigation-link search" href="#">
+              <span class="visually-hidden">Поиск</span>
             </a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="catalog.html">Гостиницы</a>
-          </li>
-        </ul>
-   </header>
-   <section class="catalog">
-    <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
-    <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-      <fieldset class="catalog-filter-group">
-        <legend class="catalog-filter-title">Инфраструктура:</legend>
-        <ul class="catalog-filter-list">
-          <li class="catalog-filter-item">
-            <label class="control">
-              <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
-              <span class="control-mark"></span>
-              <span class="control-label">Бассейн</span>
-            </label>
-          </li>
+            <button class="page-favourites" type="button">
+              <span class="visually-hidden">Избранное</span>
+            </button>
+            <button class="button add-favorites" type="button">Хочу сюда!</button>
+          </div>
+        </header>
+      <main class="main-inner main-container">
+        <div class="inner-background-container">
+          <div class="top-block-container">
+            <header class="inner-header">
+              <h1 class="inner-header-title">Гостиницы Седоны</h1>
+              <ul class="bredcrumbs">
+                <li class="breadcrumbs-item">
+                  <a class="breadcrumbs-link" href="index.html">
+                    <span class="visually-hidden">Главная</span>
+                  </a>
+                </li>
+                <li class="breadcrumbs-item">
+                  <a class="breadcrumbs-link" href="catalog.html">Гостиницы</a>
+                </li>
+              </ul>
+            </header>
+            <section class="catalog">
+              <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+              <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+                <fieldset class="catalog-filter-group">
+                  <legend class="catalog-filter-title">Инфраструктура:</legend>
+                  <ul class="catalog-filter-list">
+                    <li class="catalog-filter-item">
+                      <label class="control">
+                        <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                          <span class="control-mark"></span>
+                          <span class="control-label">Бассейн</span>
+                      </label>
+                    </li>
           <li class="catalog-filter-item">
             <label class="control">
               <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
@@ -330,5 +330,6 @@
     </div>
   </div>
 </footer>
+</div>
 </body>
 </html>
