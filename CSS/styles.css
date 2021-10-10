@@ -14,7 +14,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -24,6 +32,30 @@ body {
 
 a {
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-header-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation {
+ width: 490px;
+ margin-right: 40px;
+}
+
+.user-navigation {
+  max-width: 300px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -79,6 +111,11 @@ a {
   text-transform: none;
 }
 
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .welcome {
   background-color: rgb(56, 10, 10);
   background-image: url("../img/background/index-background.jpg");
@@ -91,7 +128,9 @@ a {
   text-align: center;
 }
 
-.main-introduction b {
+.main-introduction p:nth-child(1) {
+  width: 720px;
+  margin: 0 auto;
   color: #000000;
   font-weight: 700;
   font-size: 30px;
@@ -99,16 +138,33 @@ a {
   text-transform: uppercase;
 }
 
-.main-introduction p {
+.main-introduction p:nth-child(2) {
+  width: 720px;
+  margin: 0 auto;
   font-weight: 400;
   line-height: 36px;
 }
 
 .advantages {
+  width: 1200px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-container {
+  width: 400px;
 }
 
 .advantages-title {
@@ -123,10 +179,15 @@ a {
 }
 
 .advantages-item {
+  width: 400px;
   background-color: rgba(131, 179, 211, 0.12);
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-item:nth-child(4n+1) {
+  display: flex;
+  width: 1200px;
   color: #FFFFFF;
   background-color: #83B3D3;
 }
@@ -144,8 +205,14 @@ a {
 }
 
 .hotel-search {
+  width: 1200px;
   font-weight: 400;
   text-align: center;
+}
+
+.hotel-search p {
+  width: 720px;
+  margin: 0 auto;
 }
 
 .hotel-search-title {
@@ -157,8 +224,10 @@ a {
 }
 
 .newsletter {
+  width: 1200px;
   text-align: center;
   font-size: 400;
+  margin: 0 auto;
 }
 
 .newsletter-title {
@@ -167,6 +236,11 @@ a {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+}
+
+.newsletter p {
+  width: 720px;
+  margin:0 auto;
 }
 
 .index-newsletter {
@@ -181,6 +255,23 @@ a {
   color: #FFFFFF;
 }
 
+.page-footer-container {
+  width: 1060px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-social {
+  width: 240px;
+}
+
+.contacts-phone-container {
+  width: 720px;
+  margin: 0;
+  text-align: center;
+}
+
 .footer-contacts-phone {
   color: #000000;
   font-weight: 400;
@@ -191,7 +282,15 @@ a {
   text-transform: uppercase;
 }
 
-.inner-background {
+.htmlacademy-link-container {
+  width: 120px;
+  margin-right: 50px;
+  margin-left: 70px;
+}
+
+.inner-background-container {
+  width: 1200px;
+  margin: 0 auto;
   color: #FFFFFF;
   background-color: rgb(56, 10, 10);
   background-image: url("../img/background/catalog-background.jpg");
@@ -207,6 +306,11 @@ a {
   line-height: 78px;
 }
 
+.top-block-container {
+  width: 1060px;
+  margin: 0 auto;
+}
+
 .breadcrumbs-link {
   font-family: inherit;
   font-weight: 400;
@@ -219,6 +323,10 @@ a {
   opacity: 0.3;
 }
 
+.catalog-filter {
+  display: flex;
+}
+
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
@@ -226,10 +334,13 @@ a {
 }
 
 .sorting {
+  display: flex;
   color: #333333;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+  width: 1060px;
+  margin: 0 auto;
 }
 
 .sorting b {
@@ -245,6 +356,8 @@ a {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+  width: 1060px;
+  margin: 0 auto;
 }
 
 .hotels-card-title {
@@ -260,4 +373,18 @@ a {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.button-download-more-container {
+  text-align: center;
+}
+
+.button-download-more {
+  width: 630px;
+}
+
+.pagination-container {
+  display: flex;
+  width: 1060px;
+  justify-content: space-between;
 }
