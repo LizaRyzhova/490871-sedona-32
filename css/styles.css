@@ -616,14 +616,21 @@ img {
   background-color: #e5e5e5;
 }
 
+.field:invalid {
+  box-shadow: none;
+}
+
 .field:focus {
-  outline: 3px solid #83b3d3;
+  box-shadow: 0 0 0 3px #83b3d3;
+  border: none;
+  outline: none;
 }
 
 .field:active,
 .date-field:active {
   outline: none;
-  box-shadow: 0 0 0 2px #000000;
+  border: 2px solid #000000;
+  box-shadow: none;
 }
 
 .field::placeholder,
@@ -729,7 +736,7 @@ img {
 }
 
 .footer-contacts-phone {
-  width: 361px;
+  width: 363px;
   color: #000000;
   font-weight: 400;
   font-size: 40px;
@@ -1066,6 +1073,11 @@ img {
   margin: 0;
 }
 
+.catalog-filter-input,
+.number-field {
+  -moz-appearance: textfield;
+}
+
 .catalog-filter-input:hover {
   border: 2px solid rgba(255, 255, 255, 0.6);
 }
@@ -1148,6 +1160,47 @@ img {
   background-repeat: no-repeat;
   background-position: right 21px center;
   appearance: none;
+}
+
+.select-control,
+.select-cards-number {
+  -moz-appearance: none;
+}
+
+.navigation-link:focus,
+.user-nav-link:focus,
+.favourites-item-link:focus,
+.breadcrumbs-link:focus,
+.display-type-button:focus,
+.hotels-card-link:focus,
+.button:focus,
+.social-link:focus,
+.footer-contacts-phone:focus,
+.footer-htmlacademy-link:focus,
+.navigation-link:active,
+.user-nav-link:active,
+.favourites-item-link:active,
+.breadcrumbs-link:active,
+.display-type-button:active,
+.hotels-card-link:active,
+.button:active,
+.social-link:active,
+.footer-contacts-phone:active,
+.footer-htmlacademy-link:active,
+.user-nav-link::-moz-focus-inner,
+.button::-moz-focus-inner,
+.favourites-item-delete::-moz-focus-inner,
+.modal-close-button::-moz-focus-inner,
+.number-change::-moz-focus-inner,
+.info::-moz-focus-inner,
+.catalog-filter-input::-moz-focus-inner,
+.field::-moz-focus-inner,
+.range-toggle::-moz-focus-inner,
+.modal-search-field::-moz-focus-inner,
+.select-control::-moz-focus-inner,
+.select-cards-number::-moz-focus-inner {
+  border: none;
+  outline: none;
 }
 
 .display-type {
@@ -1510,7 +1563,8 @@ img {
 .modal-search-submit:focus:active,
 .number-change:focus:active,
 .catalog-filter-input:focus:active,
-.breadcrumbs-link:focus:active {
+.breadcrumbs-link:focus:active,
+.modal-search-field:focus:active {
   box-shadow: none;
 }
 
